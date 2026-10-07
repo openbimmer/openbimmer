@@ -7,7 +7,7 @@ import { Alert, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Header, Screen } from '@/components/screen';
 import { Group, Row, SectionTitle, Segmented } from '@/components/ui';
 import { ENGINE_MAP } from '@/data/engines';
-import { ISSUES_URL, REPO_URL } from '@/lib/links';
+import { ISSUES_URL, PRIVACY_URL, REPO_URL } from '@/lib/links';
 import { session, useConnection } from '@/obd/session';
 import { useSettings } from '@/store/settings';
 import { colors, fonts, space, type } from '@/theme';
@@ -113,6 +113,7 @@ export default function More() {
         <Row icon="engine" title="Supported engines" chevron onPress={() => router.push('/engines')} />
         <Row icon="code" title="Source code on GitHub" subtitle="Free and open source, MIT license" chevron onPress={() => WebBrowser.openBrowserAsync(REPO_URL)} />
         <Row icon="question" title="Report a problem" chevron onPress={() => WebBrowser.openBrowserAsync(ISSUES_URL)} />
+        <Row icon="lock" title="Privacy policy" chevron onPress={() => WebBrowser.openBrowserAsync(PRIVACY_URL)} />
         <Row icon="info" title="About and disclaimer" chevron onPress={() => router.push('/about')} last />
       </Group>
 

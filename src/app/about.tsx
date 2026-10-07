@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 import { Logo } from '@/components/logo';
 import { Screen } from '@/components/screen';
 import { Card, Group, Row, SectionTitle } from '@/components/ui';
-import { REPO_URL } from '@/lib/links';
+import { PRIVACY_URL, REPO_URL } from '@/lib/links';
 import { colors, space, type } from '@/theme';
 
 const LIBRARIES = ['Expo', 'React Native', 'react-native-ble-plx', 'react-native-svg', 'Reanimated', 'zustand', 'Inter', 'Barlow'];
@@ -51,6 +51,10 @@ export default function About() {
           used while the performance timer is open with GPS selected.
         </Text>
       </Card>
+
+      <Group style={{ marginTop: space.sm }}>
+        <Row icon="lock" title="Full privacy policy" chevron onPress={() => WebBrowser.openBrowserAsync(PRIVACY_URL)} last />
+      </Group>
 
       <SectionTitle title="Open source" />
       <Group>
