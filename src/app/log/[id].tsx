@@ -325,7 +325,7 @@ export default function LogDetailScreen() {
 
   if (!meta) {
     return (
-      <Screen>
+      <Screen underHeader>
         {header}
         <EmptyState
           icon="doc"
@@ -339,7 +339,7 @@ export default function LogDetailScreen() {
 
   if (state.status === 'loading') {
     return (
-      <Screen>
+      <Screen underHeader>
         {header}
         <View style={styles.loading}>
           <ActivityIndicator color={colors.textSecondary} />
@@ -351,7 +351,7 @@ export default function LogDetailScreen() {
 
   if (state.status === 'error' || !data) {
     return (
-      <Screen>
+      <Screen underHeader>
         {header}
         <EmptyState
           icon="warning"
@@ -368,7 +368,7 @@ export default function LogDetailScreen() {
   const empty = data.t.length < 2 || data.channels.length === 0;
 
   return (
-    <Screen>
+    <Screen underHeader>
       {header}
       <Text style={[type.callout, { color: colors.textSecondary, marginBottom: space.md, paddingHorizontal: 4 }]}>
         {[formatLogDate(meta.startedAt, true), engine?.code, `${data.channels.length} channels`].filter(Boolean).join(' · ')}

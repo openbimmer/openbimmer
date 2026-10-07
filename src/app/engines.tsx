@@ -9,7 +9,7 @@ import { colors, fonts, radius, space, type } from '@/theme';
 export default function Engines() {
   const current = useSettings((s) => s.engineId);
   return (
-    <Screen>
+    <Screen underHeader>
       <Text style={[type.body, { color: colors.textSecondary, marginTop: space.md, marginBottom: space.lg }]}>
         All live data comes from standard OBD-II, so every engine below works with the same adapter. The profile sets gauge ranges and
         warning limits.

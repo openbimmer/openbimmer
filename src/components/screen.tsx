@@ -4,10 +4,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { colors, space, type } from '@/theme';
 
-type Props = ScrollViewProps & { children: ReactNode; padded?: boolean };
+type Props = ScrollViewProps & { children: ReactNode; padded?: boolean; underHeader?: boolean };
 
 export const Screen = forwardRef<ScrollView, Props>(function Screen(
-  { children, contentContainerStyle, padded = true, ...rest },
+  { children, contentContainerStyle, padded = true, underHeader = false, ...rest },
   ref,
 ) {
   const insets = useSafeAreaInsets();
@@ -18,7 +18,7 @@ export const Screen = forwardRef<ScrollView, Props>(function Screen(
       style={{ backgroundColor: colors.background }}
       contentContainerStyle={[
         {
-          paddingTop: Platform.OS === 'ios' ? space.sm : insets.top + space.md,
+          paddingTop: Platform.OS === 'ios' || underHeader ? space.sm : insets.top + space.md,
           paddingBottom: Platform.OS === 'ios' ? space.xxxl : insets.bottom + 96,
         },
         padded && { paddingHorizontal: space.lg },

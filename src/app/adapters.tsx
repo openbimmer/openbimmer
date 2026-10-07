@@ -18,7 +18,7 @@ function amazon(query: string) {
 
 export default function Adapters() {
   return (
-    <Screen>
+    <Screen underHeader>
       <View style={{ gap: space.sm, marginTop: space.md }}>
         <Text style={[type.title, { color: colors.text, fontSize: 26 }]}>Which adapter do I need?</Text>
         <Text style={[type.body, { color: colors.textSecondary }]}>

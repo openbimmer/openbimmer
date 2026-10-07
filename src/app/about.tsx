@@ -11,7 +11,7 @@ const LIBRARIES = ['Expo', 'React Native', 'react-native-ble-plx', 'react-native
 
 export default function About() {
   return (
-    <Screen>
+    <Screen underHeader>
       <View style={{ alignItems: 'center', gap: space.md, marginTop: space.lg, marginBottom: space.md }}>
         <Logo size={76} />
         <Text style={[type.title, { color: colors.text }]}>OpenBimmer</Text>
