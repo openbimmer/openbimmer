@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "OpenBimmer",
+    "slug": "openbimmer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "openbimmer",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#07080A",
+    "ios": {
+      "bundleIdentifier": "de.codext.openbimmer",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "OpenBimmer uses GPS speed for the performance timer (0-100 km/h, quarter mile) while the timer is open."
+      }
+    },
+    "android": {
+      "package": "de.codext.openbimmer",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#07080A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": true,
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#07080A",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 88
+        }
+      ],
+      [
+        "react-native-ble-plx",
+        {
+          "isBackgroundEnabled": false,
+          "modes": [],
+          "neverForLocation": true,
+          "bluetoothAlwaysPermission": "OpenBimmer connects to your Bluetooth OBD adapter to read live engine data and fault codes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "OpenBimmer uses GPS speed for the performance timer (0-100 km/h, quarter mile) while the timer is open.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isIosBackgroundLocationEnabled": false
+        }
+      ],
+      "expo-sharing",
+      "expo-sqlite",
+      "expo-web-browser",
+      "./plugins/with-scene-lifecycle.js"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
