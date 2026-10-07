@@ -107,6 +107,7 @@ scripts          self-tests and icon generation
 
 Issues and pull requests are welcome. Good first contributions:
 
+- Read-only scan of all BMW control units, see [docs/bmw-control-units.md](docs/bmw-control-units.md)
 - Classic Bluetooth (SPP) support on Android and Wi-Fi adapters
 - More engine profiles
 - Translations
