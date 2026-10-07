@@ -19,6 +19,12 @@
   <img src="docs/screenshots/overview.png" alt="OpenBimmer screens: Garage, Live gauges, data log, fault codes and performance timer" />
 </p>
 
+## Download
+
+- Android: [latest APK](https://github.com/openbimmer/openbimmer/releases/latest) (Google Play listing in review)
+- iPhone: App Store submission in progress
+- Website: [openbimmer.github.io](https://openbimmer.github.io)
+
 ## Features
 
 - **Live gauges.** A large radial gauge (boost by default) with peak hold and boost target marker, a shift light that follows your engine's redline, and eight configurable value tiles with min and max.
@@ -84,7 +90,7 @@ bunx expo run:ios      # or: bunx expo run:android
 
 Bluetooth needs a development build; Expo Go does not include the BLE module. The iOS simulator has no Bluetooth, use the demo adapter there.
 
-An Android APK is attached to every [release](https://github.com/openbimmer/openbimmer/releases).
+An Android APK is attached to every [release](https://github.com/openbimmer/openbimmer/releases). Store versions for Google Play and the App Store are in review.
 
 ## Project structure
 
