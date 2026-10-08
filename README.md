@@ -21,8 +21,8 @@
 
 ## Download
 
-- Android: [latest APK](https://github.com/openbimmer/openbimmer/releases/latest) (Google Play listing in review)
-- iPhone: App Store submission in progress
+- Android: [Google Play](https://play.google.com/store/apps/details?id=de.codext.openbimmer) or the [latest APK](https://github.com/openbimmer/openbimmer/releases/latest)
+- iPhone: App Store version in review
 - Website: [openbimmer.github.io](https://openbimmer.github.io)
 
 ## Features
@@ -90,7 +90,7 @@ bunx expo run:ios      # or: bunx expo run:android
 
 Bluetooth needs a development build; Expo Go does not include the BLE module. The iOS simulator has no Bluetooth, use the demo adapter there.
 
-An Android APK is attached to every [release](https://github.com/openbimmer/openbimmer/releases). Store versions for Google Play and the App Store are in review.
+An Android APK is attached to every [release](https://github.com/openbimmer/openbimmer/releases).
 
 ## Project structure
 
