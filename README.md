@@ -22,7 +22,7 @@
 ## Download
 
 - Android: [Google Play](https://play.google.com/store/apps/details?id=de.codext.openbimmer) or the [latest APK](https://github.com/openbimmer/openbimmer/releases/latest)
-- iPhone: App Store version in review
+- iPhone: [App Store](https://apps.apple.com/app/id6820397126)
 - Website: [openbimmer.github.io](https://openbimmer.github.io)
 
 ## Features
